@@ -1,33 +1,34 @@
-const ProjectCard = () => {
+const ProjectCard = ({data}) => {
+    const {name,liveLink,sourceLink,img,shortExplain,techologies} = data || [];
     return (
         <div>
-            <div className='border border-[#000000c6] group shadow-sm rounded-md hover:shadow-2xl'>
+            <div className='border  border-[#000000c6] group shadow-sm rounded-md hover:shadow-2xl'>
                 <div>
-                    <img className=" rounded-ss-md w-full rounded-se-md h-[200px]" src="https://www.ayushmangarg.in/_next/image?url=%2Fhomestayz.webp&w=640&q=75" alt="address" />
+                    <img className=" rounded-ss-md w-full rounded-se-md h-[200px]" src={img} alt={name} />
                 </div>
                 <div className="flex flex-col p-2">
-                    <h2 className="font-semibold text-[16px]">Name of Project</h2>
-                    <p className="text-sm font-light text-[#d0c8c8e3]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint doloribus natus ipsum possimus id nostrum quaerat provident eligendi iusto quis!</p>
+                    <h2 className="font-semibold text-[16px]">{name}</h2>
+                    <p className="text-sm font-light text-[#d0c8c8e3]">{shortExplain}</p>
                 </div>
                 {/* technologies */}
                 <div className="grid grid-cols-3 gap-1 p-2">
-                    <button
+
+                    {
+                        techologies.map((tech,index)=>(
+                            <button key={tech+index}
                         type="button"
                         className="text-xs font-medium leading-4 border border-primaryBorder rounded-lg text-gray-1k inline-flex items-center justify-center gap-x-1 px-2 py-1 h-6 box-border hover:shadow-tag-hover transition-all ease-in-out select-none group/tag bg-gray-00 "
                     >
-                        <span>Leadership</span>
+                        <span>{tech}</span>
                     </button>
-                    <button
-                        type="button"
-                        className="text-xs font-medium leading-4 border border-primaryBorder rounded-lg text-gray-1k inline-flex items-center justify-center gap-x-1 px-2 py-1 h-6 box-border hover:shadow-tag-hover transition-all ease-in-out select-none group/tag bg-gray-00 "
-                    >
-                        <span>Leadership</span>
-                    </button>
+                        ))
+                    }
+
 
                 </div>
                 {/* Links */}
                 <div className="flex gap-2 p-2">
-                    <div className= " cursor-pointer items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px] bg-[#fafafa] text-[#000000fa] hover:bg-[#fafafae4] w-fit">
+                    <div onClick={()=>{window.open(liveLink,'_blank')}} className= " cursor-pointer items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px] bg-[#fafafa] text-[#000000fa] hover:bg-[#fafafae4] w-fit">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width={24}
@@ -48,7 +49,7 @@ const ProjectCard = () => {
                         Live
                     </div>
 
-                    <div className=" cursor-pointer items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px] bg-[#fafafa] text-[#000000fa] hover:bg-[#fafafae4]  w-fit">
+                    <div onClick={()=>{window.open(sourceLink,'_blank')}} className=" cursor-pointer items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px] bg-[#fafafa] text-[#000000fa] hover:bg-[#fafafae4]  w-fit">
                         <svg viewBox="0 0 438.549 438.549" className="size-3">
                             <path
                                 fill="currentColor"
