@@ -3,6 +3,7 @@ import NavigationBar from "./Components/NavigationBar"
 import OneLineIntro from "./Components/OneLineIntro"
 import Education from "./Components/Education"
 import Projects from "./Components/Projects/Projects"
+import Blogs from "./Components/Blogs/Blogs"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Education />
       
       <div className="mt-12"><hr /></div>
+      <Blogs />
       </div>
       </div>
 
