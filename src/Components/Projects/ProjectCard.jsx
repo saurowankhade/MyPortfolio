@@ -1,9 +1,9 @@
 const ProjectCard = () => {
     return (
         <div>
-            <div className='border border-[#000000c6] shadow-sm rounded-md hover:shadow-2xl'>
+            <div className='border border-[#000000c6] group shadow-sm rounded-md hover:shadow-2xl'>
                 <div>
-                    <img className="rounded-ss-md w-full rounded-se-md h-[200px]" src="https://www.ayushmangarg.in/_next/image?url=%2Fhomestayz.webp&w=640&q=75" alt="address" />
+                    <img className=" rounded-ss-md w-full rounded-se-md h-[200px]" src="https://www.ayushmangarg.in/_next/image?url=%2Fhomestayz.webp&w=640&q=75" alt="address" />
                 </div>
                 <div className="flex flex-col p-2">
                     <h2 className="font-semibold text-[16px]">Name of Project</h2>

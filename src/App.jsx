@@ -1,6 +1,7 @@
 import About from "./Components/About"
 import NavigationBar from "./Components/NavigationBar"
 import OneLineIntro from "./Components/OneLineIntro"
+import Education from "./Components/Education"
 import Projects from "./Components/Projects/Projects"
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
       <div className="mt-12"><hr /></div>
       <Projects />
       <div className="mt-12"><hr /></div>
-      <About />
+      <Education />
+      
+      <div className="mt-12"><hr /></div>
       </div>
       </div>
 
