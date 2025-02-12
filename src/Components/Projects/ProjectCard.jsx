@@ -3,8 +3,8 @@ const ProjectCard = ({data}) => {
     return (
         <div >
             <div className='border border-[#000000c6] group shadow-sm rounded-md hover:shadow-2xl'>
-                <div>
-                    <img className=" rounded-ss-md w-full rounded-se-md h-[200px]" src={img} alt={name} />
+                <div className="group overflow-hidden">
+                    <img className=" cursor-pointer object-cover transition-transform duration-300 group-hover:scale-150 group-hover:origin-center rounded-ss-md w-full rounded-se-md h-[200px]" src={img} alt={name} />
                 </div>
                 <div className="flex flex-col p-2">
                     <h2 className="font-semibold text-[16px]">{name}</h2>
