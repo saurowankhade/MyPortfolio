@@ -44,7 +44,7 @@ Open ```  http://localhost:5137 ``` in your web browser to access UrjaSolar.
 
 **License**
 
-SauroWankhade is licensed under the MIT License - see the [LICENSE](LICENSE)
+MyPortfolio is licensed under the MIT License - see the [LICENSE](LICENSE)
 file for details.
 
 **Contact**
