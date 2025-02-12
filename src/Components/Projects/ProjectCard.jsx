@@ -1,8 +1,8 @@
 const ProjectCard = ({data}) => {
     const {name,liveLink,sourceLink,img,shortExplain,techologies} = data || [];
     return (
-        <div>
-            <div className='border  border-[#000000c6] group shadow-sm rounded-md hover:shadow-2xl'>
+        <div >
+            <div className='border border-[#000000c6] group shadow-sm rounded-md hover:shadow-2xl'>
                 <div>
                     <img className=" rounded-ss-md w-full rounded-se-md h-[200px]" src={img} alt={name} />
                 </div>

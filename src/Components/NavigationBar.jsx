@@ -2,22 +2,22 @@
 const NavigationBar = () => {
     return (
 
-        <div className="fixed top-0">
+        <div className="fixed z-50 top-0">
             <div className="flex p-10 ">
                 <ul className="flex shadow-md sm:gap-10 p-4 rounded-full bg-black">
                     <li className="px-3 py-2 rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b0a6a66c] hover:scale-105">
-                        Home
+                        <a href="#home">Home</a>
                     </li>
                     <li className="px-3 py-2 rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b0a6a66c] hover:scale-105">
-                        About
+                        <a href="#about">About</a>
                     </li>
                     <li className="px-3 py-2 rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b0a6a66c] hover:scale-105">
-                        Project
+                        <a href="#project">Projects</a>
                     </li>
                     <li className="px-3 py-2 rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b0a6a66c] hover:scale-105">
-                        Blogs
+                        <a href="#blogs">Blogs</a>
                     </li>
-                    <li className="px-3 py-2 rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b0a6a66c] hover:scale-105">
+                    <li onClick={()=>window.open('https://ezlnk.vercel.app/saurabhresume','_blank')} className="px-3 py-2 rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b0a6a66c] hover:scale-105">
                         Resume
                     </li>
 
