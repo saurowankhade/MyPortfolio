@@ -1,8 +1,51 @@
-# React + Vite
+**SauroWankhade Portfolio**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+**Installation**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.  **Clone the repository**:
+``` bash
+git clone https://github.com/saurowankhade/MyPortfolio/
+```
+
+2.  **Install dependencies**:
+
+Navigate to the project folder and install required dependencies:
+```bash
+cd MyPortfolio
+npm install
+```
+3.  **Start the development server**:
+``` bash
+npm run dev
+```
+Open ```  http://localhost:5137 ``` in your web browser to access UrjaSolar.
+
+**Technologies Used**
+
+-   **Frontend**: React.js, Tailwind CSS
+
+-   **Deployment**: Vercel for frontend
+
+**Contributing**
+
+
+1.  Fork the repository.
+
+2.  Create a new branch for your feature or bug fix.
+
+3.  Make changes and commit them.
+
+4.  Push your changes to your fork.
+
+5.  Submit a pull request for review.
+
+**License**
+
+SauroWankhade is licensed under the MIT License - see the [LICENSE](LICENSE)
+file for details.
+
+**Contact**
+
+For any inquiries or feedback, please contact us at
+saurowankhade@gmail.com.
