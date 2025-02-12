@@ -6,11 +6,29 @@ import Projects from "./Components/Projects/Projects"
 import Blogs from "./Components/Blogs/Blogs"
 import Footer from "./Components/Footer"
 import Skils from "./Components/Skils"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import FunWithMe from "./Components/FunWithMe"
 
 function App() {
+
+  const [showAlert, setShowAlert] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 50) {
+        setShowAlert(true);
+      } else{
+        setShowAlert(false)
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
 
   useEffect(() => {
     AOS.init({
@@ -40,6 +58,16 @@ function App() {
       
       <div id="blogs" className="mt-12"><hr /></div>
       <Blogs />
+      <div className="mt-12"><hr /></div>
+      <FunWithMe />
+
+
+      {showAlert && (
+        <div className="fixed bottom-5 right-5 bg-[#0000009e] text-white px-4 py-2 rounded-lg shadow-lg animate-bounce">
+          Don&apos;t forget to drink water! Stay hydrated.💧
+        </div>
+      )}
+
       <div className="mt-12"><hr /></div>
       <Footer />
       </div>

@@ -23,17 +23,40 @@ html {
   }
   
 
-  @keyframes fade-up {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
+  @keyframes typing {
+    from {
+        width: 0;
     }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+    to {
+        width: 100%;
     }
 }
 
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.typing {
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    animation: typing 3s steps(20, end) forwards,  0.8s 1;
+}
+
+@keyframes fade-up {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 .fade-up {
-    animation: fade-up 5s ease-out  1;
+  animation: fade-up 5s ease-out  1;
 }
