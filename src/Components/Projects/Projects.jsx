@@ -57,7 +57,7 @@ const Projects = () => {
       sourceLink:'https://github.com/saurowankhade/UrjaVahini/',
       img:urjavahini,
       shortExplain:'UrjaVahini is a mobile app designed for electrical contractors to manage labor work and materials. It tracks project progress, facilitates communication, and allows data export. The app optimizes workflow by streamlining material management and labor task coordination efficiently.',
-      techologies:['Java','Android','Firebase','File-Handling'],
+      techologies:['Java','Android','Firebase'],
       platform:'Mobile'
     },
     {
@@ -92,10 +92,10 @@ const Projects = () => {
   }, [filteredProjects]);
 
   return (
-    <div className='mt-12'>
+    <div  className='mt-12'>
           <h1 className="text-xl font-bold pb-2 mb-2">Projects</h1>
        
-       <div className='flex gap-1 md:gap-2 mb-4 justify-evenly overflow-hidden '>
+       <div  className='flex gap-1 md:gap-2 mb-4 justify-evenly overflow-hidden '>
         <p onClick={()=>{setSortBy('All')}} className={`flex gap-2 items-center px-4 cursor-pointer py-1 bg-black hover:border rounded-full ${sortBy === 'All' ? 'border' : ''}`}><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.68023 6.67999C8.32023 6.67999 8.03223 6.39199 8.03223 6.03199V1.87999C8.03223 1.51999 8.32023 1.23199 8.68023 1.23199H12.9042C13.2642 1.23199 13.5522 1.51999 13.5522 1.87999V6.03199C13.5522 6.39199 13.2642 6.67999 12.9042 6.67999H8.68023Z" fill="white"/>
 <path d="M10.5038 9.12801L8.03183 11.792C7.88783 11.936 7.88783 12.2 8.03183 12.344L10.5038 15.008C10.6718 15.176 10.9358 15.176 11.1038 15.008L13.5758 12.344C13.7198 12.2 13.7198 11.936 13.5758 11.792L11.1038 9.12801C10.9358 8.96001 10.6478 8.96001 10.5038 9.12801Z" fill="white"/>
@@ -138,10 +138,11 @@ const Projects = () => {
 
 
        </div>
-       <div className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
+
+       <div  className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
        {
         projectShow.map((data)=>(
-          <ProjectCard key={data.name} data={data}/>
+          <ProjectCard key={data.name} animation={'fade-up'} data={data}/>
         ))
        }
        </div>

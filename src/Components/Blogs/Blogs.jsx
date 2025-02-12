@@ -35,7 +35,7 @@ const Blogs = () => {
  <div className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
  {
     blogsData.map((data)=>(
-        <BlogsCard key={data.name} data={data} />
+        <BlogsCard key={data.name} animation={'fade-up'} data={data} />
     ))
  }
  </div>

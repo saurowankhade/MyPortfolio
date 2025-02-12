@@ -13,7 +13,11 @@ import "aos/dist/aos.css"; // Import AOS styles
 function App() {
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: false }); 
+    AOS.init({
+      offset: 200, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 2000, 
+    }); 
   }, []);
 
 

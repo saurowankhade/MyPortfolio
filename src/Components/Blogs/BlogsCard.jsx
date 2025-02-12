@@ -1,6 +1,6 @@
-const BlogsCard = ({data}) => {
+const BlogsCard = ({data,animation}) => {
   return (
-    <div >
+    <div data-aos={animation}>
     <div onClick={()=>{window.open(data.link,'_blank')}} className=' cursor-pointer border border-[#000000c6] group shadow-sm rounded-md hover:shadow-2xl'>
         <div>
             <img className=" rounded-ss-md w-full rounded-se-md h-[200px]" src={data?.img} alt={data.name} />

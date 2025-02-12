@@ -1,7 +1,7 @@
-const ProjectCard = ({data}) => {
+const ProjectCard = ({data,animation}) => {
     const {name,liveLink,sourceLink,img,shortExplain,techologies} = data || [];
     return (
-        <div >
+        <div data-aos={animation}>
             <div className='border border-[#000000c6] group shadow-sm rounded-md hover:shadow-2xl'>
                 <div className="group overflow-hidden">
                     <img className=" cursor-pointer object-cover transition-transform duration-300 group-hover:scale-150 group-hover:origin-center rounded-ss-md w-full rounded-se-md h-[200px]" src={img} alt={name} />
