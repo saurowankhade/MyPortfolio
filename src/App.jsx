@@ -4,6 +4,8 @@ import OneLineIntro from "./Components/OneLineIntro"
 import Education from "./Components/Education"
 import Projects from "./Components/Projects/Projects"
 import Blogs from "./Components/Blogs/Blogs"
+import Footer from "./Components/Footer"
+import Skils from "./Components/Skils"
 
 function App() {
 
@@ -20,10 +22,14 @@ function App() {
       <div className="mt-12"><hr /></div>
       <Projects />
       <div className="mt-12"><hr /></div>
+      <Skils />
+      <div className="mt-12"><hr /></div>
       <Education />
       
       <div className="mt-12"><hr /></div>
       <Blogs />
+      <div className="mt-12"><hr /></div>
+      <Footer />
       </div>
       </div>
 

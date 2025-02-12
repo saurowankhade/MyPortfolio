@@ -18,7 +18,7 @@ const NavigationBar = () => {
                         Blogs
                     </li>
                     <li className="px-3 py-2 rounded-full cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#b0a6a66c] hover:scale-105">
-                        1:1 Book
+                        Resume
                     </li>
 
 
