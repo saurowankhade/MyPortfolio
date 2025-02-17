@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div id="home " className="bg-[#000000e2] font-inter  text-[#fafafa]  w-full">
-      <div id="about" className="flex justify-center">
+      <div id="home" className="flex justify-center">
           <NavigationBar />
       </div>
 
